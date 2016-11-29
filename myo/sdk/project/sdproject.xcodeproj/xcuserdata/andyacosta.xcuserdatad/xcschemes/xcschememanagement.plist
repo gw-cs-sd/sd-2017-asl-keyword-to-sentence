@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>prediction.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>sdproject.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A50C70221DEA1E55004A6523</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A56FB2F31DD227B00032C3AB</key>
 		<dict>
 			<key>primary</key>

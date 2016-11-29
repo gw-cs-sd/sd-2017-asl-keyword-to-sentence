@@ -12,7 +12,7 @@
 
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <ncurses.h>
+#include <curses.h>
 #include <cmath>
 #include <iomanip>
 #include <algorithm>
@@ -23,13 +23,19 @@
 #include <string>
 #include <fstream>
 #include <time.h>
-#include <Carbon/Carbon.h>
+#include <atomic>
+#include <thread>
 
 
 
 using namespace std;
 
 #include <myo/myo.hpp>
+
+/*
+ *  boolean to continue or end while loop depending on when a user presses a key
+ */
+atomic_bool keyIsPressed(false);
 
 inline bool file_exists(string name)
 {
@@ -97,7 +103,6 @@ public:
      */
     void onOrientationData(myo::Myo* myo, uint64_t timestamp, const myo::Quaternion<float>& quat)
     {
-        
         //Euler angles (r, p, w) from unit quaternion.
         roll = atan2(2.0f * (quat.w() * quat.x() + quat.y() * quat.z()),1.0f - 2.0f * (quat.x() * quat.x() + quat.y() * quat.y()));
         pitch = asin(max(-1.0f, min(1.0f, 2.0f * (quat.w() * quat.y() - quat.z() * quat.x()))));
@@ -109,7 +114,6 @@ public:
         roll_w = static_cast<int>((roll + (float)M_PI)/(M_PI * 2.0f) * 18);
         pitch_w = static_cast<int>((pitch + (float)M_PI/2.0f)/M_PI * 18);
         yaw_w = static_cast<int>((yaw + (float)M_PI)/(M_PI * 2.0f) * 18);
-        
     }
     
     /*
@@ -264,6 +268,24 @@ public:
     myo::Pose currentPose;
 };
 
+/*
+ *  Loop function for keyIsPressed
+ */
+void recordGestureLoop(myo::Hub hub)
+{
+    while(!keyIsPressed)
+    {
+        hub.run(10);
+        
+        if(!collector.onArm)
+        {
+            cout << "Please sync Myo!!" << endl;
+            return;
+        }
+        collector.print();
+        collector.recData();
+    }
+}
 
 
 /*
@@ -282,42 +304,27 @@ void recordGesture(string gesturename, int t)
     
     hub.addListener(&collector);
     int fno = 0;
-    
-    initscr();
+    //For 'keyIsPressed'
+    thread loopThread = thread(loopFunction);
     
     while(t--)
     {
         while(file_exists("rawdata\\" + gesturename + "_" + NumberToString(fno) + ".rawmyo"))
             fno++;
         string filename = "rawdata\\" + gesturename + "_" + NumberToString(fno) + ".rawmyo";
-        
-        initscr();
         std::cout << "Press s when ready to start recording gesture." << endl;
         
-        while(true)
+        
+        
+        //while(getch() != 's')
         {
-            if(getch() == 's'){
-                printw("You pressed S. end loop\n");
-                break;
-            }
-            printw("waiting");
+            
         }
         
         std::cout << "Recording gesture. Press 'x' to end recording the gesture." << std::endl;
         
-        cbreak();
-        noecho();
-        scrollok(stdscr, TRUE);
-        nodelay(stdscr, TRUE);
-        
-        while(1)
+        /*while(!keyIsPressed)
         {
-            
-            if (getch() == 'x') {
-                printw("You pressed X. end loop\n");
-                break;
-            }
-            printw("Running\n");
             hub.run(10);
             
             if(!collector.onArm)
@@ -327,9 +334,20 @@ void recordGesture(string gesturename, int t)
             }
             collector.print();
             collector.recData();
-            
-        }
-        endwin();
+            if(getch() == 'x') break;
+        }*/
+        
+        //For 'keyIsPressed'
+        thread loopThread = thread(recordGestureLoop(hub));
+        
+        #ifdef _WIN32 || _WIN64
+            system("pause");
+        #else
+            system("read -n1");
+        #endif
+        
+        keyIsPressed = true;
+        loopThread.join();
         
         std::cout << "Use recording? (y/n)" << std::endl;
         char ans;
@@ -348,6 +366,7 @@ void recordGesture(string gesturename, int t)
 //Main Function to
 int main(int argc, char** argv)
 {
+    
     /* Makes a directory called 'rawdata' to add data to */
     int status;
     status = mkdir("/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myo/sdk/project/rawdata", ACCESSPERMS);

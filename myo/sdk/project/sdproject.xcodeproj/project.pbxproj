@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50C702A1DEA1E71004A6523 /* libncurses.5.4.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD5851DD38D1500250601 /* libncurses.5.4.tbd */; };
+		A50C702B1DEA1E73004A6523 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD57F1DD276E600250601 /* myo.framework */; };
+		A50C702C1DEA1EDF004A6523 /* getpredict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A50C701E1DEA1E00004A6523 /* getpredict.cpp */; };
 		A59CD57D1DD2767200250601 /* getraw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A59CD57C1DD2767200250601 /* getraw.cpp */; };
 		A59CD5801DD276E600250601 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD57F1DD276E600250601 /* myo.framework */; };
 		A59CD5821DD28BC300250601 /* myo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A59CD57F1DD276E600250601 /* myo.framework */; };
-		A59CD5841DD385A900250601 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD5831DD385A900250601 /* Carbon.framework */; };
 		A59CD5861DD38D1500250601 /* libncurses.5.4.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A59CD5851DD38D1500250601 /* libncurses.5.4.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A50C70211DEA1E55004A6523 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		A56FB2F21DD227B00032C3AB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
@@ -28,20 +39,33 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A50C701E1DEA1E00004A6523 /* getpredict.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = getpredict.cpp; sourceTree = "<group>"; };
+		A50C70231DEA1E55004A6523 /* prediction */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prediction; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5235DB61DEDE30B0068B485 /* newDeviceListener.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = newDeviceListener.hpp; sourceTree = "<group>"; };
 		A56FB2F41DD227B00032C3AB /* sdproject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sdproject; sourceTree = BUILT_PRODUCTS_DIR; };
+		A586F3321DDB835900E7BB5B /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		A59CD57C1DD2767200250601 /* getraw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getraw.cpp; sourceTree = "<group>"; };
 		A59CD57F1DD276E600250601 /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = ../myo.framework; sourceTree = SOURCE_ROOT; };
-		A59CD5831DD385A900250601 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		A59CD5851DD38D1500250601 /* libncurses.5.4.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libncurses.5.4.tbd; path = usr/lib/libncurses.5.4.tbd; sourceTree = SDKROOT; };
+		A59CD5871DD3E7CD00250601 /* getraw_edit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getraw_edit.cpp; sourceTree = "<group>"; };
+		A59F7D1E1DE0A12D005D4BD0 /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A50C70201DEA1E55004A6523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50C702A1DEA1E71004A6523 /* libncurses.5.4.tbd in Frameworks */,
+				A50C702B1DEA1E73004A6523 /* myo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A56FB2F11DD227B00032C3AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A59CD5861DD38D1500250601 /* libncurses.5.4.tbd in Frameworks */,
-				A59CD5841DD385A900250601 /* Carbon.framework in Frameworks */,
 				A59CD5801DD276E600250601 /* myo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,7 +77,12 @@
 			isa = PBXGroup;
 			children = (
 				A56FB2F51DD227B00032C3AB /* Products */,
+				A59F7D1E1DE0A12D005D4BD0 /* Application.xib */,
 				A59CD57C1DD2767200250601 /* getraw.cpp */,
+				A5235DB61DEDE30B0068B485 /* newDeviceListener.hpp */,
+				A50C701E1DEA1E00004A6523 /* getpredict.cpp */,
+				A586F3321DDB835900E7BB5B /* test.cpp */,
+				A59CD5871DD3E7CD00250601 /* getraw_edit.cpp */,
 				A59CD57E1DD276E500250601 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A56FB2F41DD227B00032C3AB /* sdproject */,
+				A50C70231DEA1E55004A6523 /* prediction */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				A59CD5851DD38D1500250601 /* libncurses.5.4.tbd */,
-				A59CD5831DD385A900250601 /* Carbon.framework */,
 				A59CD57F1DD276E600250601 /* myo.framework */,
 			);
 			name = Frameworks;
@@ -79,6 +108,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A50C70221DEA1E55004A6523 /* prediction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A50C70271DEA1E55004A6523 /* Build configuration list for PBXNativeTarget "prediction" */;
+			buildPhases = (
+				A50C701F1DEA1E55004A6523 /* Sources */,
+				A50C70201DEA1E55004A6523 /* Frameworks */,
+				A50C70211DEA1E55004A6523 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = prediction;
+			productName = prediction;
+			productReference = A50C70231DEA1E55004A6523 /* prediction */;
+			productType = "com.apple.product-type.tool";
+		};
 		A56FB2F31DD227B00032C3AB /* sdproject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A56FB2FB1DD227B00032C3AB /* Build configuration list for PBXNativeTarget "sdproject" */;
@@ -105,6 +151,10 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Andy Acosta";
 				TargetAttributes = {
+					A50C70221DEA1E55004A6523 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					A56FB2F31DD227B00032C3AB = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
@@ -124,11 +174,20 @@
 			projectRoot = "";
 			targets = (
 				A56FB2F31DD227B00032C3AB /* sdproject */,
+				A50C70221DEA1E55004A6523 /* prediction */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A50C701F1DEA1E55004A6523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50C702C1DEA1EDF004A6523 /* getpredict.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A56FB2F01DD227B00032C3AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,6 +199,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A50C70281DEA1E55004A6523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A50C70291DEA1E55004A6523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A56FB2F91DD227B00032C3AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -258,6 +333,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A50C70271DEA1E55004A6523 /* Build configuration list for PBXNativeTarget "prediction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A50C70281DEA1E55004A6523 /* Debug */,
+				A50C70291DEA1E55004A6523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A56FB2EF1DD227B00032C3AB /* Build configuration list for PBXProject "sdproject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

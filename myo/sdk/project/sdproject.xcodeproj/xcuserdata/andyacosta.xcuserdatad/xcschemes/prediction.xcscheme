@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A533B70B1DD2760C0074C149"
-               BuildableName = "collectraw"
-               BlueprintName = "collectraw"
-               ReferencedContainer = "container:collectraw.xcodeproj">
+               BlueprintIdentifier = "A50C70221DEA1E55004A6523"
+               BuildableName = "prediction"
+               BlueprintName = "prediction"
+               ReferencedContainer = "container:sdproject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A533B70B1DD2760C0074C149"
-            BuildableName = "collectraw"
-            BlueprintName = "collectraw"
-            ReferencedContainer = "container:collectraw.xcodeproj">
+            BlueprintIdentifier = "A50C70221DEA1E55004A6523"
+            BuildableName = "prediction"
+            BlueprintName = "prediction"
+            ReferencedContainer = "container:sdproject.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A533B70B1DD2760C0074C149"
-            BuildableName = "collectraw"
-            BlueprintName = "collectraw"
-            ReferencedContainer = "container:collectraw.xcodeproj">
+            BlueprintIdentifier = "A50C70221DEA1E55004A6523"
+            BuildableName = "prediction"
+            BlueprintName = "prediction"
+            ReferencedContainer = "container:sdproject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A533B70B1DD2760C0074C149"
-            BuildableName = "collectraw"
-            BlueprintName = "collectraw"
-            ReferencedContainer = "container:collectraw.xcodeproj">
+            BlueprintIdentifier = "A50C70221DEA1E55004A6523"
+            BuildableName = "prediction"
+            BlueprintName = "prediction"
+            ReferencedContainer = "container:sdproject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
