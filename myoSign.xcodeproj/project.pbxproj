@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A52B0F241E350A0D007E0153 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52B0F231E350A0D007E0153 /* main.cpp */; };
+		A52B0F311E350A85007E0153 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A52B0F301E350A85007E0153 /* main.cpp */; };
+		A554306C1E35371300B54BD3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A554306B1E35371300B54BD3 /* main.cpp */; };
+		A5ED17AA1E6F2666006ADB57 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ED17A91E6F2666006ADB57 /* myo.framework */; };
+		A5ED17AB1E6F2670006ADB57 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ED17A91E6F2666006ADB57 /* myo.framework */; };
+		A5ED17AC1E6F2674006ADB57 /* myo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ED17A91E6F2666006ADB57 /* myo.framework */; };
+		A5ED17AE1E6F267E006ADB57 /* libgrt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ED17AD1E6F267E006ADB57 /* libgrt.a */; };
+		A5ED17AF1E6F2683006ADB57 /* libgrt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ED17AD1E6F267E006ADB57 /* libgrt.a */; };
+		A5ED17B01E6F2687006ADB57 /* libgrt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A5ED17AD1E6F267E006ADB57 /* libgrt.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A52B0F1E1E350A0D007E0153 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A52B0F2C1E350A85007E0153 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A55430671E35371300B54BD3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A52B0F201E350A0D007E0153 /* myoSign */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = myoSign; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52B0F231E350A0D007E0153 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A52B0F2E1E350A85007E0153 /* get */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = get; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52B0F301E350A85007E0153 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A55430691E35371300B54BD3 /* analyze */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = analyze; sourceTree = BUILT_PRODUCTS_DIR; };
+		A554306B1E35371300B54BD3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A5BE85691E6DFA3A004ED5E8 /* aslDeviceListener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = aslDeviceListener.h; sourceTree = "<group>"; };
+		A5BE85751E6EECD0004ED5E8 /* gesturelistener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gesturelistener.h; sourceTree = "<group>"; };
+		A5ED17A71E6F25F2006ADB57 /* grt-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "grt-master"; sourceTree = SOURCE_ROOT; };
+		A5ED17A91E6F2666006ADB57 /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = myo.framework; sourceTree = "<group>"; };
+		A5ED17AD1E6F267E006ADB57 /* libgrt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgrt.a; path = "grt-master/build/tmp/libgrt.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A52B0F1D1E350A0D007E0153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ED17AE1E6F267E006ADB57 /* libgrt.a in Frameworks */,
+				A5ED17AC1E6F2674006ADB57 /* myo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52B0F2B1E350A85007E0153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ED17AB1E6F2670006ADB57 /* myo.framework in Frameworks */,
+				A5ED17AF1E6F2683006ADB57 /* libgrt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55430661E35371300B54BD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5ED17AA1E6F2666006ADB57 /* myo.framework in Frameworks */,
+				A5ED17B01E6F2687006ADB57 /* libgrt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A52B0F171E350A0D007E0153 = {
+			isa = PBXGroup;
+			children = (
+				A5BE85691E6DFA3A004ED5E8 /* aslDeviceListener.h */,
+				A5BE85751E6EECD0004ED5E8 /* gesturelistener.h */,
+				A52B0F221E350A0D007E0153 /* myoSign */,
+				A52B0F2F1E350A85007E0153 /* get */,
+				A554306A1E35371300B54BD3 /* analyze */,
+				A52B0F211E350A0D007E0153 /* Products */,
+				A52B0F361E350C4B007E0153 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A52B0F211E350A0D007E0153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A52B0F201E350A0D007E0153 /* myoSign */,
+				A52B0F2E1E350A85007E0153 /* get */,
+				A55430691E35371300B54BD3 /* analyze */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A52B0F221E350A0D007E0153 /* myoSign */ = {
+			isa = PBXGroup;
+			children = (
+				A52B0F231E350A0D007E0153 /* main.cpp */,
+			);
+			path = myoSign;
+			sourceTree = "<group>";
+		};
+		A52B0F2F1E350A85007E0153 /* get */ = {
+			isa = PBXGroup;
+			children = (
+				A5ED17A71E6F25F2006ADB57 /* grt-master */,
+				A52B0F301E350A85007E0153 /* main.cpp */,
+			);
+			path = get;
+			sourceTree = "<group>";
+		};
+		A52B0F361E350C4B007E0153 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5ED17AD1E6F267E006ADB57 /* libgrt.a */,
+				A5ED17A91E6F2666006ADB57 /* myo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A554306A1E35371300B54BD3 /* analyze */ = {
+			isa = PBXGroup;
+			children = (
+				A554306B1E35371300B54BD3 /* main.cpp */,
+			);
+			path = analyze;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A52B0F1F1E350A0D007E0153 /* myoSign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52B0F271E350A0D007E0153 /* Build configuration list for PBXNativeTarget "myoSign" */;
+			buildPhases = (
+				A52B0F1C1E350A0D007E0153 /* Sources */,
+				A52B0F1D1E350A0D007E0153 /* Frameworks */,
+				A52B0F1E1E350A0D007E0153 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myoSign;
+			productName = myoSign;
+			productReference = A52B0F201E350A0D007E0153 /* myoSign */;
+			productType = "com.apple.product-type.tool";
+		};
+		A52B0F2D1E350A85007E0153 /* get */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52B0F321E350A85007E0153 /* Build configuration list for PBXNativeTarget "get" */;
+			buildPhases = (
+				A52B0F2A1E350A85007E0153 /* Sources */,
+				A52B0F2B1E350A85007E0153 /* Frameworks */,
+				A52B0F2C1E350A85007E0153 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = get;
+			productName = get;
+			productReference = A52B0F2E1E350A85007E0153 /* get */;
+			productType = "com.apple.product-type.tool";
+		};
+		A55430681E35371300B54BD3 /* analyze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A554306F1E35371300B54BD3 /* Build configuration list for PBXNativeTarget "analyze" */;
+			buildPhases = (
+				A55430651E35371300B54BD3 /* Sources */,
+				A55430661E35371300B54BD3 /* Frameworks */,
+				A55430671E35371300B54BD3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = analyze;
+			productName = analyze;
+			productReference = A55430691E35371300B54BD3 /* analyze */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A52B0F181E350A0D007E0153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Andy Acosta";
+				TargetAttributes = {
+					A52B0F1F1E350A0D007E0153 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TA6EQ6GQYY;
+						ProvisioningStyle = Automatic;
+					};
+					A52B0F2D1E350A85007E0153 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TA6EQ6GQYY;
+						ProvisioningStyle = Automatic;
+					};
+					A55430681E35371300B54BD3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = TA6EQ6GQYY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A52B0F1B1E350A0D007E0153 /* Build configuration list for PBXProject "myoSign" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A52B0F171E350A0D007E0153;
+			productRefGroup = A52B0F211E350A0D007E0153 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A52B0F1F1E350A0D007E0153 /* myoSign */,
+				A52B0F2D1E350A85007E0153 /* get */,
+				A55430681E35371300B54BD3 /* analyze */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A52B0F1C1E350A0D007E0153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52B0F241E350A0D007E0153 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52B0F2A1E350A85007E0153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52B0F311E350A85007E0153 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55430651E35371300B54BD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A554306C1E35371300B54BD3 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A52B0F251E350A0D007E0153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A52B0F261E350A0D007E0153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A52B0F281E350A0D007E0153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/seniordesign/myo/sdk/project/grt/build/tmp,
+					"$(PROJECT_DIR)/grt-master/build/tmp",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A52B0F291E350A0D007E0153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/seniordesign/myo/sdk/project/grt/build/tmp,
+					"$(PROJECT_DIR)/grt-master/build/tmp",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A52B0F331E350A85007E0153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/seniordesign/myo/sdk/project/grt/build/tmp,
+					"$(PROJECT_DIR)/grt-master/build/tmp",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A52B0F341E350A85007E0153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/seniordesign/myo/sdk/project/grt/build/tmp,
+					"$(PROJECT_DIR)/grt-master/build/tmp",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A554306D1E35371300B54BD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/seniordesign/myo/sdk/project/grt/build/tmp,
+					"$(PROJECT_DIR)/grt-master/build/tmp",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A554306E1E35371300B54BD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/seniordesign/myo/sdk/project/grt/build/tmp,
+					"$(PROJECT_DIR)/grt-master/build/tmp",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A52B0F1B1E350A0D007E0153 /* Build configuration list for PBXProject "myoSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52B0F251E350A0D007E0153 /* Debug */,
+				A52B0F261E350A0D007E0153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52B0F271E350A0D007E0153 /* Build configuration list for PBXNativeTarget "myoSign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52B0F281E350A0D007E0153 /* Debug */,
+				A52B0F291E350A0D007E0153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52B0F321E350A85007E0153 /* Build configuration list for PBXNativeTarget "get" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52B0F331E350A85007E0153 /* Debug */,
+				A52B0F341E350A85007E0153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A554306F1E35371300B54BD3 /* Build configuration list for PBXNativeTarget "analyze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A554306D1E35371300B54BD3 /* Debug */,
+				A554306E1E35371300B54BD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A52B0F181E350A0D007E0153 /* Project object */;
+}
