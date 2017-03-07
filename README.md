@@ -6,15 +6,14 @@ ASL Keyword to Sentence is an interface to help making signing easier for indivi
 Libraries/Frameworks
 -------
 
-The following markups are supported.  The dependencies listed are required if
-you wish to run the library. You can also run `script/bootstrap` to fetch them all.
+Here is a list of the library and frameworks used to run this program.
 
 * [Nick Gillian's GRT](http://www.nickgillian.com/wiki/pmwiki.php/GRT/GestureRecognitionToolkit) 
 * [Myo Armband](http://myo.com)`
 * [Myo SDK/Framework](https://developer.thalmic.com/docs/api_reference/platform/the-sdk.html)
 
 
-Installation
+Installation/Usage
 -----------
 
 Still in progress.
