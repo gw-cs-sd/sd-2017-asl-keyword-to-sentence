@@ -9,6 +9,7 @@
 #include <iostream>
 #include <sys/stat.h>
 #include <vector>
+#include <string>
 
 #include <map>
 #include <cstdlib>
@@ -57,6 +58,17 @@ void accessFiles(std::vector<std::string> &out, const std::string directoryName)
     std::cout << "Directory closed." << std::endl;
 }
 
+std::string getName(const std::string gestures){
+    char sep = '/';
+    size_t i = gestures.rfind(sep, gestures.length());
+    if(i != string::npos){
+        string temp = gestures.substr(i+1, gestures.length()-i);
+        return temp.substr(0,temp.length()-4);
+    }
+    
+    return ("");
+}
+
 
 int main(int argc, const char * argv[]) {
     int status;
@@ -84,8 +96,22 @@ int main(int argc, const char * argv[]) {
     
     std::string::size_type sz;
     
+    std::string getGestureName;
+    
     for(UINT i = 0; i < gestures.size(); i++){
         gestureLabel = i+1;
+        
+        getGestureName = getName(gestures[i]);
+        std::cout << getGestureName << std::endl;
+        
+        std::ofstream ofs;
+        ofs.open ("../processed/classNames.csv", std::ofstream::out | std::ofstream::app);
+        ofs << gestureLabel;
+        ofs << ",";
+        ofs << getGestureName;
+        ofs << "\n";
+        
+        ofs.close();
         
         trainingSample.clear();
         vector <vector <double> > data;
@@ -110,20 +136,16 @@ int main(int argc, const char * argv[]) {
                 if (!getline( ss, s, ',' ))
                     break;
                 if(col == 0){
-                    std::cout << "Col is 0" << s << std::endl;
                     checkedtestnum = std::stod(s, &sz);
                     if(checkedtestnum != testnum){
-                        std::cout << "changing testnum " << std::endl;
                         data.push_back( record );
                         trainingSample.push_back(record);
-                        
                         training.addSample(gestureLabel, trainingSample);
                         trainingSample.clear();
                         testnum++;
                     }
                 }
                 else{
-                    std::cout << "Col is not 0" << std::endl;
                     double z = std::stod(s, &sz);
                     record.push_back( z );
                 }

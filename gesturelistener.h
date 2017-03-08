@@ -14,6 +14,7 @@
 #include <stdexcept>
 #include <string>
 #include <fstream>
+#include <map>
 
 #include <myo/myo.hpp>
 #include "grt-master/GRT/GRT.h"
@@ -33,15 +34,51 @@ class gesturelistener : public myo::DeviceListener {
     
 public:
     
-    gesturelistener(string datamodel) : onArm(false), isUnlocked(false), roll_w(0), pitch_w(0), yaw_w(0), currentPose(){
+    gesturelistener(string classnames, string datamodel) : onArm(false), isUnlocked(false), roll_w(0), pitch_w(0), yaw_w(0), currentPose(){
         //emgSamples = vector<double>(0,0);
         emgSamples = array<int, 8>();
         roll = 0; pitch = 0; yaw = 0;
         ax = ay = az = 0;
-        gesturenames.push_back("null");
-        gesturenames.push_back("1");
-        gesturenames.push_back("2");
+        //gesturenames.push_back("null");
+        gestureIdName[0] = "null";
+        //gesturenames.push_back("1");
+        //gesturenames.push_back("2");
         
+        ifstream infile( classnames );
+        std::cout << classnames << std::endl;
+        
+        int gestureID;
+        while (infile)
+        {
+            std::string s;
+            if (!getline( infile, s )) break;
+            
+            std::istringstream ss( s );
+            int col = 0;
+            while (ss)
+            {
+                
+                std::string s;
+                
+                if (!getline( ss, s, ',' ))
+                    break;
+                int z;
+                if(col == 0){
+                    z = std::stoi(s);
+                }
+                if(col == 1){
+                    gestureIdName[z] = s;
+                    std::cout << gestureIdName[z] << std::endl;
+                }
+                col++;
+                
+            }
+        }
+        
+        if (!infile.eof())
+        {
+            std::cerr << "Error with file!\n";
+        }
         
         dtw1.enableTrimTrainingData(true, 0.1, 90);
         
@@ -196,7 +233,7 @@ public:
         
         data.push_back(temp);
         
-        int bufferSize = 100;
+        int bufferSize = 200;
         if(data.size() > bufferSize+1){
             MatrixDouble window;
             for(int i = 0; i < bufferSize; i++){
@@ -215,7 +252,7 @@ public:
             double maxLikelihood = dtw1.getMaximumLikelihood();
             
             if(predictedClassLabel){
-                cout << "PREDICTED CLASS LABEL:" + NumberToString(predictedClassLabel) << endl;
+                cout << "PREDICTED CLASS LABEL:" + gestureIdName[predictedClassLabel] << endl;
                 //onGesture(maxLikelihood, gesturenames[predictedClassLabel]);
                 temp.clear();
                 data.clear();
@@ -225,6 +262,7 @@ public:
     }
     
     vector<string> gesturenames;
+    std::map<int, string> gestureIdName;
     vector<vector<double > > data;
     bool onArm;
     myo::Arm whichArm;
