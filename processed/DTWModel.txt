@@ -3,7 +3,7 @@ Trained: 1
 UseScaling: 0
 NumInputDimensions: 14
 NumOutputDimensions: 0
-NumTrainingIterationsToConverge: 1649410144
+NumTrainingIterationsToConverge: 0
 MinNumEpochs: 0
 MaxNumEpochs: 100
 ValidationSetSize: 20
