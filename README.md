@@ -20,7 +20,7 @@ Structure
 * `gesturelistener.h` the new device listener that checks for new gestures taught to the armband
 * `myoSignApp` app that is used to train the `get` module **IN PROGRESS**
 * `displayWords` app that is used to display the current word signed
-
+* `myoTrain` app that is used to display and analyze the data in the folders
 
 Installation/Usage
 -----------
