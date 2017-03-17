@@ -1,0 +1,503 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		8156946AA0DEE83C85B8CC2D /* Qt Preprocess */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "myoSignApp" */;
+			buildPhases = (
+				5E618435888B9D49F8540165 /* Qt Qmake */,
+				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
+			);
+			dependencies = (
+			);
+			name = "Qt Preprocess";
+			productName = "Qt Preprocess";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		09C7B5814049B32BA51D5F3A /* dummy.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = CCA72C3C998BAC7E091A4F1F /* dummy.cpp */; settings = {ATTRIBUTES = (); }; };
+		2EB43F12DBC1A4509584B892 /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A869B9EDE502BD2D3EABF9EB /* QtCore.framework */; };
+		5743804B0C87A8AD7A88A0F9 /* moc_mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = B2941EA35576FEDCFB6069CE /* moc_mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		5A60429E935BCD67357C296C /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 77FE81F9319572075C2253E4 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		86A248FA701C0FAA5235253D /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = FD63D9B97FE6C2646FC54D4C /* QtWidgets.framework */; };
+		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
+		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
+		A5DC88DC1E79A065000A0418 /* myo.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A5DC88DB1E79A065000A0418 /* myo.framework */; };
+		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
+		B59EF119A6C5BB02252FC53A /* mainwindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 06DC1302DF15D250A59AFB03 /* mainwindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
+		E78F5CDD02A550260B16B04C /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 715D1E5C41476D4AE8478ABC /* QtGui.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5DC88DA1E799FA8000A0418 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8156946AA0DEE83C85B8CC2D;
+			remoteInfo = "Qt Preprocess";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06DC1302DF15D250A59AFB03 /* mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mainwindow.cpp; path = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/mainwindow.cpp"; sourceTree = "<absolute>"; };
+		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
+		2F2833472C09F6B9C5AB8B2C /* .qmake.stash */ = {isa = PBXFileReference; lastKnownFileType = text; name = .qmake.stash; path = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/.qmake.stash"; sourceTree = "<absolute>"; };
+		58F106C1DE6838DE5730BDE7 /* myoSignApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myoSignApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		715D1E5C41476D4AE8478ABC /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Users/aacosta/Documents/Qt/5.8/clang_64/lib/QtGui.framework; sourceTree = "<absolute>"; };
+		77FE81F9319572075C2253E4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/main.cpp"; sourceTree = "<absolute>"; };
+		785A145FC355BE80FAB8285B /* myoSignApp.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = myoSignApp.pro; path = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/myoSignApp.pro"; sourceTree = "<absolute>"; };
+		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		A5DC88DB1E79A065000A0418 /* myo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = myo.framework; path = ../myo.framework; sourceTree = "<group>"; };
+		A869B9EDE502BD2D3EABF9EB /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Users/aacosta/Documents/Qt/5.8/clang_64/lib/QtCore.framework; sourceTree = "<absolute>"; };
+		B2941EA35576FEDCFB6069CE /* moc_mainwindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_mainwindow.cpp; path = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/moc_mainwindow.cpp"; sourceTree = "<absolute>"; };
+		BB2F006C9F88161E5C196450 /* mainwindow.ui */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = mainwindow.ui; path = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/mainwindow.ui"; sourceTree = "<absolute>"; };
+		CCA72C3C998BAC7E091A4F1F /* dummy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = dummy.cpp; path = /Users/aacosta/Documents/Qt/5.8/clang_64/mkspecs/features/data/dummy.cpp; sourceTree = "<absolute>"; };
+		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		F0194BBBDAB5EEE0EF1D60F5 /* ui_mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ui_mainwindow.h; path = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/ui_mainwindow.h"; sourceTree = "<absolute>"; };
+		F118975CD72284803163FC87 /* mainwindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mainwindow.h; path = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/mainwindow.h"; sourceTree = "<absolute>"; };
+		FD63D9B97FE6C2646FC54D4C /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /Users/aacosta/Documents/Qt/5.8/clang_64/lib/QtWidgets.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DC88DC1E79A065000A0418 /* myo.framework in Link Binary With Libraries */,
+				86A248FA701C0FAA5235253D /* QtWidgets.framework in Link Binary With Libraries */,
+				E78F5CDD02A550260B16B04C /* QtGui.framework in Link Binary With Libraries */,
+				2EB43F12DBC1A4509584B892 /* QtCore.framework in Link Binary With Libraries */,
+				A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */,
+				8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */,
+				8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */,
+				E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */,
+			);
+			name = "Link Binary With Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12E908B8A1C3C07C115504F5 /* Sources [uic] */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F006C9F88161E5C196450 /* mainwindow.ui */,
+			);
+			name = "Sources [uic]";
+			sourceTree = "<group>";
+		};
+		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B2941EA35576FEDCFB6069CE /* moc_mainwindow.cpp */,
+				F0194BBBDAB5EEE0EF1D60F5 /* ui_mainwindow.h */,
+			);
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				77FE81F9319572075C2253E4 /* main.cpp */,
+				06DC1302DF15D250A59AFB03 /* mainwindow.cpp */,
+				F118975CD72284803163FC87 /* mainwindow.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				785A145FC355BE80FAB8285B /* myoSignApp.pro */,
+				2F2833472C09F6B9C5AB8B2C /* .qmake.stash */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5DC88DB1E79A065000A0418 /* myo.framework */,
+				FD63D9B97FE6C2646FC54D4C /* QtWidgets.framework */,
+				715D1E5C41476D4AE8478ABC /* QtGui.framework */,
+				A869B9EDE502BD2D3EABF9EB /* QtCore.framework */,
+				2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */,
+				A1A67BEAA744704B29168D39 /* IOKit.framework */,
+				D4B32C2222F82AC56BADEB21 /* OpenGL.framework */,
+				8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */ = {
+			isa = PBXGroup;
+			children = (
+				CCA72C3C998BAC7E091A4F1F /* dummy.cpp */,
+			);
+			name = "Sources [moc_predefs]";
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 /* myoSignApp */ = {
+			isa = PBXGroup;
+			children = (
+				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				25B08E2869634E9BCBA333A2 /* Generated Sources */,
+				74B182DB50CB5611B5C1C297 /* Supporting Files */,
+				B8254625CFD509ED2A24A166 /* Sources [moc_predefs] */,
+				12E908B8A1C3C07C115504F5 /* Sources [uic] */,
+				AF39DD055C3EF8226FBE929D /* Frameworks */,
+				FE0A091FDBFB3E9C31B7A1BD /* Products */,
+			);
+			name = myoSignApp;
+			sourceTree = "<group>";
+		};
+		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58F106C1DE6838DE5730BDE7 /* myoSignApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89F5A6BB7910E7D8172C0880 /* myoSignApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "myoSignApp" */;
+			buildPhases = (
+				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
+				D1C883685E82D5676953459A /* Link Binary With Libraries */,
+				30414803F31797EB689AE508 /* Copy Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A5500A6F85D033B480286B0 /* PBXTargetDependency */,
+			);
+			name = myoSignApp;
+			productName = myoSignApp;
+			productReference = 58F106C1DE6838DE5730BDE7 /* myoSignApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB9C3763D02B1415CD9D565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					8156946AA0DEE83C85B8CC2D = {
+						DevelopmentTeam = TA6EQ6GQYY;
+					};
+					89F5A6BB7910E7D8172C0880 = {
+						DevelopmentTeam = TA6EQ6GQYY;
+					};
+				};
+			};
+			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "myoSignApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8C543AB96796ECAA2E65C57 /* myoSignApp */;
+			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89F5A6BB7910E7D8172C0880 /* myoSignApp */,
+				8156946AA0DEE83C85B8CC2D /* Qt Preprocess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Copy Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E618435888B9D49F8540165 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/ -f myoSignApp.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = 0;
+		};
+		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/ -f myoSignApp.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A60429E935BCD67357C296C /* main.cpp in Compile Sources */,
+				B59EF119A6C5BB02252FC53A /* mainwindow.cpp in Compile Sources */,
+				5743804B0C87A8AD7A88A0F9 /* moc_mainwindow.cpp in Compile Sources */,
+				09C7B5814049B32BA51D5F3A /* dummy.cpp in Compile Sources */,
+			);
+			name = "Compile Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A5500A6F85D033B480286B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8156946AA0DEE83C85B8CC2D /* Qt Preprocess */;
+			targetProxy = A5DC88DA1E799FA8000A0418 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		339EE1B2CC4FC24589A0EA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../../../Qt/5.8/clang_64/lib/QtWidgets.framework/Headers,
+					../../../Qt/5.8/clang_64/lib/QtGui.framework/Headers,
+					../../../Qt/5.8/clang_64/lib/QtCore.framework/Headers,
+					.,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					"../../../Qt/5.8/clang_64/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-stdlib=libc++",
+					"-Wl,-rpath,/Users/aacosta/Documents/Qt/5.8/clang_64/lib",
+					"-F/Users/aacosta/Documents/Qt/5.8/clang_64/lib",
+				);
+				PRODUCT_NAME = myoSignApp;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				SYMROOT = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/";
+			};
+			name = Release;
+		};
+		3AA6C32AC930069E80220CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					../../../Qt/5.8/clang_64/lib/QtWidgets.framework/Headers,
+					../../../Qt/5.8/clang_64/lib/QtGui.framework/Headers,
+					../../../Qt/5.8/clang_64/lib/QtCore.framework/Headers,
+					.,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					.,
+					"../../../Qt/5.8/clang_64/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_DEPRECATED_WARNINGS",
+					"-DQT_NO_DEBUG",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-stdlib=libc++",
+					"-Wl,-rpath,/Users/aacosta/Documents/Qt/5.8/clang_64/lib",
+					"-F/Users/aacosta/Documents/Qt/5.8/clang_64/lib",
+				);
+				PRODUCT_NAME = myoSignApp;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = macosx;
+				SYMROOT = "/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence/myoSignApp/";
+			};
+			name = Debug;
+		};
+		6666AA5E688052234F6758D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					"/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					/System/Library/Frameworks/,
+					"/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence",
+				);
+				PRODUCT_NAME = myoSignApp;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		77418F46922677BB04ED38DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = TA6EQ6GQYY;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					"/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence",
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				LIBRARY_SEARCH_PATHS = (
+					/Users/aacosta/Documents/Qt/5.8/clang_64/lib,
+					/System/Library/Frameworks/,
+					"/Users/aacosta/Documents/seniordesign/sd-2017-asl-keyword-to-sentence",
+				);
+				PRODUCT_NAME = myoSignApp;
+				QT_LIBRARY_SUFFIX = _debug;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "myoSignApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77418F46922677BB04ED38DD /* Debug */,
+				6666AA5E688052234F6758D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "myoSignApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA6C32AC930069E80220CF1 /* Debug */,
+				339EE1B2CC4FC24589A0EA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
+}

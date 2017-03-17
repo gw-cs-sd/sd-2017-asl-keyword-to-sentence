@@ -16,11 +16,12 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
 
-    void on_singleWordOption_pressed();
+    void on_startTraining_clicked();
 
-    void on_sentenceOption_pressed();
+    void on_start_clicked();
+
+    void on_stop_clicked();
 
 private:
     Ui::MainWindow *ui;

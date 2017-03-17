@@ -7,57 +7,90 @@
     <x>0</x>
     <y>0</y>
     <width>500</width>
-    <height>521</height>
+    <height>540</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>myoSign</string>
   </property>
   <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="gestureNameOutput">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>100</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <widget class="QWidget" name="verticalLayoutWidget_2">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>230</y>
+      <y>120</y>
       <width>481</width>
-      <height>251</height>
+      <height>341</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
-      <widget class="QLabel" name="outputLabel">
-       <property name="font">
-        <font>
-         <pointsize>36</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="autoFillBackground">
+      <widget class="QScrollArea" name="scrollArea_2">
+       <property name="widgetResizable">
         <bool>true</bool>
        </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>477</width>
+          <height>337</height>
+         </rect>
+        </property>
+        <widget class="QPlainTextEdit" name="outputData">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>481</width>
+           <height>341</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="testsRemainOutput">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>100</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>50</y>
+      <y>0</y>
       <width>241</width>
       <height>71</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="gesturenameLabel">
        <property name="text">
         <string>Gesture Name</string>
        </property>
@@ -72,18 +105,82 @@
      </item>
     </layout>
    </widget>
+   <widget class="QLabel" name="testlabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>100</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tests Remain:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>470</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gestureLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>59</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Gesture:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>470</y>
+      <width>113</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
    <widget class="QWidget" name="horizontalLayoutWidget_2">
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>50</y>
+      <y>0</y>
       <width>231</width>
       <height>71</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QLabel" name="label_2">
+      <widget class="QLabel" name="testNumLabel">
        <property name="text">
         <string>Number of tests: </string>
        </property>
@@ -94,40 +191,11 @@
      </item>
     </layout>
    </widget>
-   <widget class="QRadioButton" name="sentenceOption">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>10</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Sentence</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="singleWordOption">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>10</y>
-      <width>100</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Single Word</string>
-    </property>
-    <property name="checked">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="startTraining">
     <property name="geometry">
      <rect>
       <x>380</x>
-      <y>140</y>
+      <y>70</y>
       <width>113</width>
       <height>32</height>
      </rect>
@@ -144,6 +212,9 @@
    </widget>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
+   <property name="windowTitle">
+    <string>myoSign</string>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
