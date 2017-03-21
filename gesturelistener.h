@@ -218,7 +218,7 @@ public:
     }
     
     
-    void recData(){
+    string recData(){
         
         vector<double> temp;
         temp.push_back(ax);
@@ -262,9 +262,10 @@ public:
                 //onGesture(maxLikelihood, gesturenames[predictedClassLabel]);
                 temp.clear();
                 data.clear();
+                return gestureIdName[predictedClassLabel];
             }
         }
-        
+        return "";
     }
     
     vector<string> gesturenames;
