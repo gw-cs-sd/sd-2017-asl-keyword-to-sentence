@@ -44,14 +44,14 @@ public:
         //gesturenames.push_back("1");
         //gesturenames.push_back("2");
         
-        std::ofstream ofsClear;
+        /*std::ofstream ofsClear;
         ofsClear.open(classnames, std::ofstream::out | std::ofstream::trunc);
-        ofsClear.close();
+        ofsClear.close();*/ 
         
         ifstream infile( classnames );
         std::cout << classnames << std::endl;
         
-        infile.clear();
+        //infile.clear();
         
         int gestureID;
         while (infile)
