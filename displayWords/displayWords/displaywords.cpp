@@ -39,23 +39,31 @@ void displayWords::on_startButton_clicked()
     hub.addListener(&collector);
     hub.setLockingPolicy(myo::Hub::lockingPolicyNone);
     
+    ui->displayTheWord->setText("Starting..");
+
+    time_t endwait;
+    time_t start = time(NULL);
+    time_t seconds = 3; // after 20s, end loop.
     
-    while(1) {
+    endwait = start + seconds;
+    
+    printf("start time is : %s", ctime(&start));
+    
+    while (start <= endwait)
+    {
+    
         // Query every 10 milliseconds.
-        hub.run(35);
+        hub.run(10);
         
         //collector.print();
-        ui->displayTheWord->setText(QString::fromStdString(collector.recData()));
+        collector.recData();
+        ui->displayTheWord->setText(QString::fromStdString(collector.getCurrentWord()));
         
         if(!collector.onArm) {
             cout << "!!!!!!!!!!!!!!Please sync the Myo!!!!!!!!!!!!!!!!!!!!!" << endl;
-            break;
         }
-        // Remember to call collector.recData() each time you call hub.run()!
-        //collector.recData();
-        
+     start = time(NULL);
     }
-    
     
     cout << "DONE!" << endl;
 }
