@@ -224,7 +224,7 @@ int main(int argc, const char * argv[]) {
         
         //Perform a prediction using the classifier
         if( !dtw1.predict( timeseries ) ){
-            std::cout << "Failed to perform prediction for test sampel: " << i <<"\n";
+            std::cout << "Failed to perform prediction for test sample: " << i <<"\n";
             return EXIT_FAILURE;
         }
         

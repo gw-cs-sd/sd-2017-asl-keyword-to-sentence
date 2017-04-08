@@ -46,7 +46,7 @@ public:
         
         /*std::ofstream ofsClear;
         ofsClear.open(classnames, std::ofstream::out | std::ofstream::trunc);
-        ofsClear.close();*/ 
+        ofsClear.close();*/
         
         ifstream infile( classnames );
         std::cout << classnames << std::endl;
@@ -87,6 +87,7 @@ public:
         }
         
         dtw1.enableTrimTrainingData(true, 0.1, 90);
+        dtw1.enableNullRejection(true);
         
         //Load DTW model from file
         if(!dtw1.loadModelFromFile(datamodel)){
@@ -218,7 +219,7 @@ public:
     }
     
     
-    string recData(){
+    void recData(){
         
         vector<double> temp;
         temp.push_back(ax);
@@ -259,15 +260,20 @@ public:
             
             if(predictedClassLabel){
                 cout << "PREDICTED CLASS LABEL:" + gestureIdName[predictedClassLabel] << endl;
+                currentWord = gestureIdName[predictedClassLabel];
                 //onGesture(maxLikelihood, gesturenames[predictedClassLabel]);
                 temp.clear();
                 data.clear();
-                return gestureIdName[predictedClassLabel];
             }
         }
-        return "";
     }
     
+    string getCurrentWord(){
+        return currentWord;
+    }
+    
+    
+    string currentWord;
     vector<string> gesturenames;
     std::map<int, string> gestureIdName;
     vector<vector<double > > data;
